@@ -2,8 +2,6 @@
 
 BASEDIR="$( dirname -- $( realpath -- "${BASH_SOURCE[0]}" ) )"
 
-chmod 755 *.sh
-chmod 755 system-sleep/*.sh
 install -m 644 systemd/auto-suspend.service /etc/systemd/system/
 
 ln -s ${BASEDIR}/auto-suspend.sh /usr/local/bin/
