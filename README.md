@@ -1,0 +1,2 @@
+# EPGStationSuspend
+EPGStationを稼働するLinuxサーバーを普段スリープさせておくスクリプト
