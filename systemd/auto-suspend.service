@@ -1,0 +1,12 @@
+[Unit]
+Description=Auto suspend on inactivity
+After=suspend.target network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/auto-suspend.sh
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=suspend.target multi-user.target
